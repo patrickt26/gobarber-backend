@@ -5,7 +5,14 @@
 </h1>
 
 <h4 align="center">
-  Um aplicativo de agendamento de barbearia que permite aos usuários agendar uma consulta com seu barbeiro favorito e mostra ao barbeiro sua agenda para o dia.
+  Uma aplicação de agendamento de barbearia que permite aos usuários agendar uma consulta com seu barbeiro favorito e mostra ao barbeiro sua agenda para o dia.
+
+  Este é o backend dessa aplicação, uma API REST desenvolvida em Node.js.
+
+  Por meio desta API, é possível realizar requisições para:
+
+  - Criar/Atualizar usuários
+  - Criar sessão
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/patrickt26/gobarber-backend.svg">
