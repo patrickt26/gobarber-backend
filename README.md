@@ -81,17 +81,17 @@
 
 Esse é um projeto desenvolvido no [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) com as seguintes tecnologias:
 
--  [Node.js][nodejs]
--  [Express](https://expressjs.com/)
--  [nodemon](https://nodemon.io/)
--  [Sucrase](https://github.com/alangpierce/sucrase)
--  [Docker](https://www.docker.com/docker-community)
--  [Sequelize](http://docs.sequelizejs.com/)
--  [PostgreSQL](https://www.postgresql.org/)
--  [node-postgres](https://www.npmjs.com/package/pg)
--  [Yup](https://github.com/jquense/yup)
--  [VS Code][vc] com [ESLint][vceslint] e [EditorConfig][vceditconfig]
--  [Prettier][prettier]
+-  [Node.js][nodejs](v12.14.0)
+-  [Express](https://expressjs.com/)(v.4.17.1)
+-  [nodemon](https://nodemon.io/)(v.2.0.2)
+-  [Sucrase](https://github.com/alangpierce/sucrase)(v.3.12.1)
+-  [Docker](https://www.docker.com/docker-community)(v.19.03.5)
+-  [Sequelize](http://docs.sequelizejs.com/)(v.5.21.3)
+-  [PostgreSQL](https://www.postgresql.org/)(v.11)
+-  [node-postgres](https://www.npmjs.com/package/pg)(v.7.18.1)
+-  [Yup](https://github.com/jquense/yup)(v.0.28.1)
+-  [VS Code][vc] com [ESLint][vceslint](v.6.8.0) e [EditorConfig][vceditconfig](v.0.14.4)
+-  [Prettier][prettier](v.1.19.1)
 
 ## :memo: Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/patrickt26/gobarber-backend/blob/master/LICENSE) para mais detalhes.
