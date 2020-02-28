@@ -28,14 +28,21 @@
   - Docker
   </h3>
 
-  Para esse projeto foi utilizado um container de Docker de PostgreSQL.
+  Para esse projeto foi utilizado um container de Docker de PostgreSQL e um container de MongoDB.
 
-  Para executar o projeto assim como foi desenvolvido, crie um container Docker com o comando:
+  Para executar o projeto assim como foi desenvolvido, crie containers Docker com os seguintes comando:
+
+  PostgresSQL
   ```
   docker run --name postgresDB -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
   ```
 
-  Caso já possua um banco PostgreSQL, um container de Docker para o mesmo ou até mesmo utiliza de outro banco de dados relacional, basta apenas alterar as credenciais de conexão com o banco no arquivo [database.js][database.js].
+  MongoDB
+  ```
+  docker run --name mongoDB - 27017:27017 -d -t mongo
+  ```
+
+  Caso prefira não utilizar dessas configurações, basta apenas alterar as credenciais de conexão com o banco no arquivo [database.js][database.js], para o PostgresSQL, e o arquivo [index.js][index.js], para o MongoDB.
 
   <h3>
   - Node.js
@@ -79,7 +86,7 @@
 
 ## :rocket: Tecnologias
 
-Esse é um projeto desenvolvido no [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) com as seguintes tecnologias:
+Esse é um projeto desenvolvido no [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) com as seguintes tecnologias (em suas respectivas versões):
 
 -  [Node.js][nodejs](v12.14.0)
 -  [Express](https://expressjs.com/)(v.4.17.1)
@@ -90,7 +97,12 @@ Esse é um projeto desenvolvido no [RocketSeat GoStack Bootcamp](https://rockets
 -  [PostgreSQL](https://www.postgresql.org/)(v.11)
 -  [node-postgres](https://www.npmjs.com/package/pg)(v.7.18.1)
 -  [Yup](https://github.com/jquense/yup)(v.0.28.1)
--  [VS Code][vc] com [ESLint][vceslint](v.6.8.0) e [EditorConfig][vceditconfig](v.0.14.4)
+-  [Multer](https://github.com/expressjs/multer)(v.1.4.2)
+-  [date-fns](https://date-fns.org)(v.2.0.0-beta.5)
+-  [Mongoose](https://mongoosejs.com)(v.5.9.2)
+
+-  [VS Code][vc] com [ESLint][vceslint](v.2.1.1) e [EditorConfig][vceditconfig](v.0.14.4)
+-  [ES Lint](https://eslint.org)(v.6.8.0)
 -  [Prettier][prettier](v.1.19.1)
 
 ## :memo: Licença
@@ -107,3 +119,4 @@ Feito com ♥ por Patrick Thomaz :wave: [Get in touch!](https://www.linkedin.com
 [vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [prettier]: https://prettier.io
 [database.js]: https://github.com/patrickt26/gobarber-backend/blob/master/src/config/database.js
+[index.js]: https://github.com/patrickt26/gobarber-backend/blob/master/src/database/index.js
